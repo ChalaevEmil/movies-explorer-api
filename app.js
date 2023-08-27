@@ -10,7 +10,7 @@ const helmet = require('helmet');
 const { requestLogger } = require('./middlewares/logger');
 const routes = require('./routes');
 
-const { PORT = 3001 } = process.env;
+const { PORT = 3000 } = process.env;
 
 const app = express();
 
