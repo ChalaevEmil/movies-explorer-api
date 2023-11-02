@@ -22,7 +22,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: ['https://kinosite.nomoredomainsicu.ru', 'http://localhost:3000' 'https://api.nomoreparties.co'],
+    origin: ['https://kinosite.nomoredomainsicu.ru', 'http://localhost:3000', 'https://api.nomoreparties.co'],
     credentials: true,
   }),
 );
