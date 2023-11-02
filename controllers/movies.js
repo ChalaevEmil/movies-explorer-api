@@ -17,7 +17,7 @@ const getMovies = (req, res, next) => {
 const createMovie = (req, res, next) => {
   const newMovie = req.body;
   // eslint-disable-next-line no-unused-vars
-  const owner = req.user._id;
+  newMovie.owner = req.user._id;
   Movie.create(newMovie)
     .then((movie) => res.status(201).send(movie))
     .catch((err) => {
